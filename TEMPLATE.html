@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>PAGE TITLE — QUWWA Gym</title>
+
+  <!-- ✅ STEP 1: Link shared CSS (always keep this) -->
+  <link rel="stylesheet" href="css/shared.css" />
+
+  <!-- ✅ STEP 2: Link YOUR page-specific CSS -->
+  <link rel="stylesheet" href="css/your-page.css" />
+</head>
+<body>
+
+  <!-- ✅ STEP 3: Navbar gets injected here automatically — don't change this div -->
+  <div id="navbar-placeholder"></div>
+
+  <!-- ✅ STEP 4: Your page content goes inside <main> -->
+  <main>
+
+    <!-- Example section -->
+    <section>
+      <div class="container">
+        <h2 class="section-title">Your Section Title</h2>
+        <div class="divider"></div>
+        <p class="section-subtitle">A short description of this section goes here.</p>
+
+        <!-- Cards example -->
+        <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(260px,1fr)); gap:1.5rem;">
+          <div class="card">
+            <div class="card-body">
+              <h3>Card Title</h3>
+              <p>Card description text goes here. Data loaded from JSON or DB.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Button example -->
+        <div class="text-center mt-4">
+          <a href="#" class="btn btn-primary">Primary Button</a>
+          <a href="#" class="btn btn-outline mt-2">Outline Button</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Alt background section -->
+    <section class="section-alt">
+      <div class="container">
+        <h2 class="section-title">Another Section</h2>
+        <div class="divider"></div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ✅ STEP 5: Footer gets injected here automatically — don't change this div -->
+  <div id="footer-placeholder"></div>
+
+  <!-- ✅ STEP 6: Always load shared.js FIRST, then your page JS -->
+  <script src="js/shared.js"></script>
+  <script src="js/your-page.js"></script>
+
+  <!-- ✅ STEP 7: Use fetchAPI() or loadJSON() to get your data -->
+  <script>
+    // Example: fetch classes from the Node.js server
+    // const classes = await fetchAPI('classes');
+
+    // Example: load data directly from JSON file
+    // const data = await loadJSON('data/gym-data.json');
+
+    // Example: form validation helpers available from shared.js:
+    // validateRequired(inputEl, errorEl)
+    // validateEmail(inputEl, errorEl)
+    // validatePhone(inputEl, errorEl)
+  </script>
+
+</body>
+</html>
