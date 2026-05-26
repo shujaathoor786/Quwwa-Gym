@@ -1,0 +1,209 @@
+{
+  "gym": {
+    "name": "QUWWA",
+    "tagline": "Built for those who refuse to stop.",
+    "email": "hello@quwwa.ae",
+    "phone": "+971 4 123 4567",
+    "branches": [
+      { "name": "Dubai Marina", "address": "Marina Walk, Dubai Marina, Dubai, UAE", "hours": "6:00 AM – 11:00 PM" },
+      { "name": "JLT",          "address": "Cluster O, Jumeirah Lake Towers, Dubai, UAE", "hours": "6:00 AM – 10:00 PM" }
+    ]
+  },
+
+  "history": [
+    { "year": 2015, "event": "QUWWA founded in Dubai Marina with just 200 members and a dream." },
+    { "year": 2017, "event": "Opened second branch in JLT to meet growing demand across Dubai." },
+    { "year": 2019, "event": "Launched online class booking platform and certified 10 in-house trainers." },
+    { "year": 2021, "event": "Surpassed 5,000 active members. Renovated Marina branch with new equipment." },
+    { "year": 2023, "event": "Introduced recovery & wellness program, including yoga and physiotherapy." },
+    { "year": 2025, "event": "Named #1 gym in Dubai Marina by FitLife Arabia magazine." }
+  ],
+
+  "awards": [
+    { "year": 2025, "title": "#1 Gym in Dubai Marina", "issuer": "FitLife Arabia" },
+    { "year": 2024, "title": "Best Fitness Community", "issuer": "Dubai Wellness Awards" },
+    { "year": 2023, "title": "Top Rated Gym — UAE", "issuer": "Google Reviews (4.9★)" },
+    { "year": 2022, "title": "Excellence in Personal Training", "issuer": "UAE Fitness Council" }
+  ],
+
+  "memberships": [
+    {
+      "id": 1,
+      "name": "Starter",
+      "price": 199,
+      "period": "month",
+      "color": "grey",
+      "features": [
+        "Access to 1 branch",
+        "Gym floor & cardio area",
+        "2 group classes per week",
+        "Locker room access"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Pro",
+      "price": 349,
+      "period": "month",
+      "color": "red",
+      "popular": true,
+      "features": [
+        "Access to all branches",
+        "Unlimited group classes",
+        "1 PT session per month",
+        "Nutrition consultation",
+        "Locker room + towel service"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Elite",
+      "price": 599,
+      "period": "month",
+      "color": "orange",
+      "features": [
+        "Access to all branches",
+        "Unlimited group classes",
+        "4 PT sessions per month",
+        "Monthly body composition scan",
+        "Priority class booking",
+        "Guest passes (2/month)"
+      ]
+    }
+  ],
+
+  "classes": [
+    { "id": 1, "name": "HIIT Blast",       "type": "Cardio",   "duration": 45, "trainer": "Sara Ahmed",    "level": "Intermediate", "description": "High-intensity interval training to torch calories and boost endurance." },
+    { "id": 2, "name": "Power Lift",        "type": "Strength", "duration": 60, "trainer": "Mike Torres",   "level": "Advanced",     "description": "Olympic lifting and compound movements for serious strength gains." },
+    { "id": 3, "name": "Morning Flow Yoga", "type": "Yoga",     "duration": 50, "trainer": "Layla Hassan",  "level": "Beginner",     "description": "A gentle morning yoga flow to improve flexibility and mental clarity." },
+    { "id": 4, "name": "Boxing Fundamentals","type": "Boxing",  "duration": 55, "trainer": "Omar Khalid",   "level": "Beginner",     "description": "Learn stance, footwork, and basic combinations in a fun group setting." },
+    { "id": 5, "name": "Core Crusher",      "type": "Strength", "duration": 30, "trainer": "Sara Ahmed",    "level": "Intermediate", "description": "30 minutes of targeted core work — abs, obliques, and lower back." },
+    { "id": 6, "name": "Spin Cycle",        "type": "Cardio",   "duration": 45, "trainer": "Mike Torres",   "level": "All Levels",   "description": "High-energy indoor cycling to upbeat music. Great for all fitness levels." },
+    { "id": 7, "name": "Restorative Yoga",  "type": "Yoga",     "duration": 60, "trainer": "Layla Hassan",  "level": "Beginner",     "description": "Deep stretching and mindfulness for full-body recovery." },
+    { "id": 8, "name": "Advanced Boxing",   "type": "Boxing",   "duration": 60, "trainer": "Omar Khalid",   "level": "Advanced",     "description": "Combinations, sparring drills, and defensive techniques for experienced boxers." }
+  ],
+
+  "schedule": [
+    { "day": "Monday",    "slots": [
+      { "time": "07:00", "classId": 3 }, { "time": "09:00", "classId": 1 }, { "time": "18:00", "classId": 2 }, { "time": "20:00", "classId": 5 }
+    ]},
+    { "day": "Tuesday",   "slots": [
+      { "time": "07:00", "classId": 6 }, { "time": "10:00", "classId": 4 }, { "time": "19:00", "classId": 1 }
+    ]},
+    { "day": "Wednesday", "slots": [
+      { "time": "07:00", "classId": 3 }, { "time": "09:00", "classId": 5 }, { "time": "18:00", "classId": 8 }, { "time": "20:00", "classId": 6 }
+    ]},
+    { "day": "Thursday",  "slots": [
+      { "time": "07:00", "classId": 7 }, { "time": "10:00", "classId": 2 }, { "time": "19:00", "classId": 4 }
+    ]},
+    { "day": "Friday",    "slots": [
+      { "time": "08:00", "classId": 1 }, { "time": "10:00", "classId": 6 }, { "time": "17:00", "classId": 5 }
+    ]},
+    { "day": "Saturday",  "slots": [
+      { "time": "09:00", "classId": 3 }, { "time": "11:00", "classId": 4 }, { "time": "15:00", "classId": 2 }
+    ]},
+    { "day": "Sunday",    "slots": [
+      { "time": "09:00", "classId": 7 }, { "time": "11:00", "classId": 6 }
+    ]}
+  ],
+
+  "trainers": [
+    {
+      "id": 1,
+      "name": "Sara Ahmed",
+      "specialization": "Cardio",
+      "bio": "Sara is a certified HIIT and functional training coach with 8 years of experience. She has trained over 500 clients across Dubai and Abu Dhabi.",
+      "certifications": ["ACE Certified PT", "TRX Specialist", "Nutrition Coach L1"],
+      "photo": "images/trainer-sara.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Mike Torres",
+      "specialization": "Strength",
+      "bio": "Former competitive powerlifter and strength coach. Mike specialises in Olympic lifting and progressive overload programming.",
+      "certifications": ["NSCA-CSCS", "USA Weightlifting L2", "CrossFit L2"],
+      "photo": "images/trainer-mike.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Layla Hassan",
+      "specialization": "Yoga",
+      "bio": "200-hour RYT yoga instructor with a background in physiotherapy. Layla blends movement science with mindfulness.",
+      "certifications": ["RYT-200", "Yin Yoga Certified", "Prenatal Yoga Certified"],
+      "photo": "images/trainer-layla.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Omar Khalid",
+      "specialization": "Boxing",
+      "bio": "Ex-amateur boxing champion turned coach. Omar brings competitive-level technique to beginner and advanced students alike.",
+      "certifications": ["UAE Boxing Federation Coach", "ACE Certified PT"],
+      "photo": "images/trainer-omar.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Rania Mostafa",
+      "specialization": "Yoga",
+      "bio": "Rania is a mindfulness and mobility specialist with 6 years of experience. She combines breathwork, flexibility training, and mental wellness into every session.",
+      "certifications": ["RYT-500", "Meditation Coach", "Mobility Specialist"],
+      "photo": "images/trainer-rania.jpg"
+    },
+    {
+      "id": 6,
+      "name": "James Okafor",
+      "specialization": "Strength",
+      "bio": "James is a former professional rugby player turned strength and conditioning coach. He builds athletic performance programs for all levels.",
+      "certifications": ["NSCA-CSCS", "Sports Performance Coach", "First Aid Certified"],
+      "photo": "images/trainer-james.jpg"
+    },
+    {
+      "id": 7,
+      "name": "Nour Al Rashid",
+      "specialization": "Cardio",
+      "bio": "Nour is a certified spin and functional cardio coach who specialises in high-energy group sessions. She holds records in the UAE national marathon circuit.",
+      "certifications": ["Spinning Certified", "ACE Group Fitness", "Nutrition Coach L2"],
+      "photo": "images/trainer-nour.jpg"
+    },
+    {
+      "id": 8,
+      "name": "David Kim",
+      "specialization": "Boxing",
+      "bio": "David trained under WBC-certified coaches in South Korea before relocating to Dubai. He focuses on technique, speed, and mental resilience.",
+      "certifications": ["WBC Boxing Coach", "ACE Certified PT", "Sports Psychology L1"],
+      "photo": "images/trainer-david.jpg"
+    },
+    {
+      "id": 9,
+      "name": "Hana Siddiqui",
+      "specialization": "Cardio",
+      "bio": "Hana is a Zumba and dance fitness instructor with a background in professional dance. Her sessions are energetic, fun, and incredibly effective.",
+      "certifications": ["Zumba Licensed Instructor", "ACE Certified PT", "Dance Fitness Specialist"],
+      "photo": "images/trainer-hana.jpg"
+    },
+    {
+      "id": 10,
+      "name": "Tariq Al Mansoori",
+      "specialization": "Strength",
+      "bio": "Tariq is QUWWA's head strength coach and a 3x UAE powerlifting champion. He designs bespoke strength programs for competitive and recreational athletes.",
+      "certifications": ["IPF Certified Coach", "NSCA-CSCS", "Advanced Sports Nutrition"],
+      "photo": "images/trainer-tariq.jpg"
+    }
+  ],
+
+  "testimonials": [
+    { "id": 1, "name": "Ahmed R.",    "rating": 5, "text": "QUWWA changed my life. Lost 18kg in 6 months with their Pro plan and Sara's coaching. Best investment I've made.", "plan": "Pro" },
+    { "id": 2, "name": "Fatima K.",   "rating": 5, "text": "The yoga classes with Layla are incredible. The atmosphere is calming and she always adjusts for everyone's level.", "plan": "Starter" },
+    { "id": 3, "name": "James W.",    "rating": 4, "text": "Great facilities, modern equipment and very clean. Mike's Power Lift class is no joke — I'm stronger than ever.", "plan": "Elite" },
+    { "id": 4, "name": "Nour S.",     "rating": 5, "text": "Omar's boxing classes are so fun. I started as a total beginner and now I can hold my own in sparring drills!", "plan": "Pro" },
+    { "id": 5, "name": "Priya M.",    "rating": 5, "text": "The community here is amazing. Everyone is so supportive and the staff goes out of their way to help you reach your goals.", "plan": "Pro" }
+  ],
+
+  "faqs": [
+    { "question": "Can I try before committing?",        "answer": "Yes! We offer a free 1-day trial pass. Visit any branch with a valid ID and ask at reception." },
+    { "question": "Can I freeze my membership?",        "answer": "Members can freeze their membership for up to 2 months per year. Contact reception or email us to arrange." },
+    { "question": "Are there contracts?",               "answer": "Our plans are month-to-month with no long-term contract. Cancel anytime with 7 days' notice." },
+    { "question": "Do you offer student discounts?",    "answer": "Yes — 15% off all plans for students with a valid university ID." },
+    { "question": "Is parking available?",              "answer": "Both branches have dedicated free parking for members during their session." },
+    { "question": "What should I bring on my first day?", "answer": "Just yourself, comfortable workout clothes, and a water bottle. We provide towels for Pro and Elite members." }
+  ]
+}
