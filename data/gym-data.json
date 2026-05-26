@@ -112,81 +112,141 @@
       "id": 1,
       "name": "Sara Ahmed",
       "specialization": "Cardio",
-      "bio": "Sara is a certified HIIT and functional training coach with 8 years of experience. She has trained over 500 clients across Dubai and Abu Dhabi.",
+      "experience": 8,
+      "tagline": "Your energy is your superpower.",
+      "bio": "Sara is a certified HIIT and functional training coach with 8 years of experience. She has trained over 500 clients across Dubai and Abu Dhabi, helping everyone from complete beginners to competitive athletes reach their peak. Sara's sessions are high-energy, results-driven, and always fun.",
       "certifications": ["ACE Certified PT", "TRX Specialist", "Nutrition Coach L1"],
-      "photo": "images/trainer-sara.jpg"
+      "classes": ["HIIT Blast", "Core Crusher", "Spin Cycle"],
+      "availability": ["Monday", "Wednesday", "Friday"],
+      "clientQuote": { "text": "Sara pushed me beyond what I thought I was capable of. I lost 18kg in 5 months and I've never felt stronger.", "author": "Ahmed R., Pro Member" },
+      "photo": "images/sara.jpg",
+      "gallery": ["images/gym-main.jpg", "images/cardio.jpg", "images/group-class.jpg"]
     },
     {
       "id": 2,
       "name": "Mike Torres",
       "specialization": "Strength",
-      "bio": "Former competitive powerlifter and strength coach. Mike specialises in Olympic lifting and progressive overload programming.",
+      "experience": 10,
+      "tagline": "Lift heavy. Live stronger.",
+      "bio": "Former competitive powerlifter and strength coach with a decade of experience. Mike specialises in Olympic lifting and progressive overload programming. He has coached national-level athletes and everyday gym-goers with equal dedication and passion.",
       "certifications": ["NSCA-CSCS", "USA Weightlifting L2", "CrossFit L2"],
-      "photo": "images/trainer-mike.jpg"
+      "classes": ["Power Lift", "Core Crusher"],
+      "availability": ["Tuesday", "Thursday", "Saturday"],
+      "clientQuote": { "text": "Mike's programming took my deadlift from 80kg to 160kg in under a year. His technical knowledge is unmatched.", "author": "James W., Elite Member" },
+      "photo": "images/mike.jpg",
+      "gallery": ["images/gym-main.jpg", "images/pt-session.jpg", "images/boxing-ring.jpg"]
     },
     {
       "id": 3,
       "name": "Layla Hassan",
       "specialization": "Yoga",
-      "bio": "200-hour RYT yoga instructor with a background in physiotherapy. Layla blends movement science with mindfulness.",
+      "experience": 6,
+      "tagline": "Find stillness. Find strength.",
+      "bio": "200-hour RYT yoga instructor with a background in physiotherapy. Layla blends movement science with mindfulness to deliver sessions that heal the body and calm the mind. She works with clients recovering from injuries and those seeking a deeper mind-body connection.",
       "certifications": ["RYT-200", "Yin Yoga Certified", "Prenatal Yoga Certified"],
-      "photo": "images/trainer-layla.jpg"
+      "classes": ["Morning Flow Yoga", "Restorative Yoga"],
+      "availability": ["Monday", "Wednesday", "Sunday"],
+      "clientQuote": { "text": "Layla's classes completely changed my relationship with my body. My back pain is gone and I feel more at peace than ever.", "author": "Fatima K., Starter Member" },
+      "photo": "images/layla.jpg",
+      "gallery": ["images/yoga-studio.jpg", "images/pt-session.jpg", "images/rooftop.jpg"]
     },
     {
       "id": 4,
       "name": "Omar Khalid",
       "specialization": "Boxing",
-      "bio": "Ex-amateur boxing champion turned coach. Omar brings competitive-level technique to beginner and advanced students alike.",
+      "experience": 7,
+      "tagline": "Discipline. Speed. Power.",
+      "bio": "Ex-amateur boxing champion turned coach. Omar brings competitive-level technique to beginner and advanced students alike. His classes combine real boxing fundamentals with intense cardio conditioning, producing athletes who are fast, focused, and fearless.",
       "certifications": ["UAE Boxing Federation Coach", "ACE Certified PT"],
-      "photo": "images/trainer-omar.jpg"
+      "classes": ["Boxing Fundamentals", "Advanced Boxing"],
+      "availability": ["Tuesday", "Thursday", "Saturday"],
+      "clientQuote": { "text": "Omar's classes are the highlight of my week. I started as a total beginner and now I can hold my own in sparring drills!", "author": "Nour S., Pro Member" },
+      "photo": "images/omar.jpg",
+      "gallery": ["images/boxing-ring.jpg", "images/gym-main.jpg", "images/group-class.jpg"]
     },
     {
       "id": 5,
       "name": "Rania Mostafa",
       "specialization": "Yoga",
-      "bio": "Rania is a mindfulness and mobility specialist with 6 years of experience. She combines breathwork, flexibility training, and mental wellness into every session.",
+      "experience": 6,
+      "tagline": "Breathe in. Let go. Transform.",
+      "bio": "Rania is a mindfulness and mobility specialist who combines breathwork, flexibility training, and mental wellness into every session. With 6 years of teaching experience, she creates a safe, inclusive space for all body types and fitness levels.",
       "certifications": ["RYT-500", "Meditation Coach", "Mobility Specialist"],
-      "photo": "images/trainer-rania.jpg"
+      "classes": ["Morning Flow Yoga", "Restorative Yoga"],
+      "availability": ["Monday", "Friday", "Sunday"],
+      "clientQuote": { "text": "Rania helped me manage my anxiety through movement. Her sessions are truly transformative — I leave feeling like a new person.", "author": "Priya M., Pro Member" },
+      "photo": "images/rania.jpg",
+      "gallery": ["images/yoga-studio.jpg", "images/rooftop.jpg", "images/pt-session.jpg"]
     },
     {
       "id": 6,
       "name": "James Okafor",
       "specialization": "Strength",
-      "bio": "James is a former professional rugby player turned strength and conditioning coach. He builds athletic performance programs for all levels.",
+      "experience": 9,
+      "tagline": "Train like an athlete. Live like a champion.",
+      "bio": "James is a former professional rugby player turned strength and conditioning coach. With 9 years of experience, he builds athletic performance programs for all levels — from beginners building their first foundation to seasoned athletes chasing peak performance.",
       "certifications": ["NSCA-CSCS", "Sports Performance Coach", "First Aid Certified"],
-      "photo": "images/trainer-james.jpg"
+      "classes": ["Power Lift", "Core Crusher"],
+      "availability": ["Monday", "Wednesday", "Saturday"],
+      "clientQuote": { "text": "James brought a whole new level of athleticism to my training. His rugby background shows — the conditioning work is brutal but brilliant.", "author": "Khalid M., Elite Member" },
+      "photo": "images/james.jpg",
+      "gallery": ["images/gym-main.jpg", "images/pt-session.jpg", "images/cardio.jpg"]
     },
     {
       "id": 7,
       "name": "Nour Al Rashid",
       "specialization": "Cardio",
-      "bio": "Nour is a certified spin and functional cardio coach who specialises in high-energy group sessions. She holds records in the UAE national marathon circuit.",
+      "experience": 5,
+      "tagline": "Every rep. Every km. Every win.",
+      "bio": "Nour is a certified spin and functional cardio coach who specialises in high-energy group sessions. She holds records in the UAE national marathon circuit and channels that competitive drive into every class she leads.",
       "certifications": ["Spinning Certified", "ACE Group Fitness", "Nutrition Coach L2"],
-      "photo": "images/trainer-nour.jpg"
+      "classes": ["Spin Cycle", "HIIT Blast"],
+      "availability": ["Tuesday", "Thursday", "Sunday"],
+      "clientQuote": { "text": "Nour's spin classes are absolutely electric. I've tried gyms all over Dubai and nothing compares to her energy.", "author": "Sara L., Pro Member" },
+      "photo": "images/nour.jpg",
+      "gallery": ["images/cardio.jpg", "images/group-class.jpg", "images/gym-main.jpg"]
     },
     {
       "id": 8,
       "name": "David Kim",
       "specialization": "Boxing",
-      "bio": "David trained under WBC-certified coaches in South Korea before relocating to Dubai. He focuses on technique, speed, and mental resilience.",
+      "experience": 8,
+      "tagline": "Technique wins fights. Focus wins life.",
+      "bio": "David trained under WBC-certified coaches in South Korea before relocating to Dubai. He focuses on technique, speed, and mental resilience — building fighters who are sharp in the ring and sharp in life.",
       "certifications": ["WBC Boxing Coach", "ACE Certified PT", "Sports Psychology L1"],
-      "photo": "images/trainer-david.jpg"
+      "classes": ["Boxing Fundamentals", "Advanced Boxing"],
+      "availability": ["Monday", "Wednesday", "Friday"],
+      "clientQuote": { "text": "David's technical coaching is on another level. In 3 months he transformed my footwork and combination speed completely.", "author": "Omar F., Elite Member" },
+      "photo": "images/david.jpg",
+      "gallery": ["images/boxing-ring.jpg", "images/gym-main.jpg", "images/pt-session.jpg"]
     },
     {
       "id": 9,
       "name": "Hana Siddiqui",
       "specialization": "Cardio",
-      "bio": "Hana is a Zumba and dance fitness instructor with a background in professional dance. Her sessions are energetic, fun, and incredibly effective.",
+      "experience": 4,
+      "tagline": "Dance. Sweat. Repeat.",
+      "bio": "Hana is a Zumba and dance fitness instructor with a background in professional dance. Her sessions are energetic, fun, and incredibly effective — burning up to 700 calories per class while keeping you smiling the whole way through.",
       "certifications": ["Zumba Licensed Instructor", "ACE Certified PT", "Dance Fitness Specialist"],
-      "photo": "images/trainer-hana.jpg"
+      "classes": ["HIIT Blast", "Spin Cycle"],
+      "availability": ["Tuesday", "Saturday", "Sunday"],
+      "clientQuote": { "text": "I used to dread working out. Hana's classes made me actually look forward to the gym. I've lost 10kg and gained so much confidence.", "author": "Lina B., Starter Member" },
+      "photo": "images/hana.jpg",
+      "gallery": ["images/group-class.jpg", "images/cardio.jpg", "images/gym-main.jpg"]
     },
     {
       "id": 10,
       "name": "Tariq Al Mansoori",
       "specialization": "Strength",
-      "bio": "Tariq is QUWWA's head strength coach and a 3x UAE powerlifting champion. He designs bespoke strength programs for competitive and recreational athletes.",
+      "experience": 12,
+      "tagline": "Built in Dubai. Forged in iron.",
+      "bio": "Tariq is QUWWA's head strength coach and a 3x UAE powerlifting champion. With 12 years of experience, he designs bespoke strength programs for competitive and recreational athletes. His deep knowledge of biomechanics and sports nutrition sets him apart.",
       "certifications": ["IPF Certified Coach", "NSCA-CSCS", "Advanced Sports Nutrition"],
-      "photo": "images/trainer-tariq.jpg"
+      "classes": ["Power Lift", "Core Crusher"],
+      "availability": ["Monday", "Thursday", "Saturday"],
+      "clientQuote": { "text": "Tariq is the best coach I've ever worked with. His attention to form and programming detail is exceptional. A true champion.", "author": "Hamad A., Elite Member" },
+      "photo": "images/tariq.jpg",
+      "gallery": ["images/gym-main.jpg", "images/pt-session.jpg", "images/rooftop.jpg"]
     }
   ],
 
