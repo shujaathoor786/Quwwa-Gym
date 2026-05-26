@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Trainers & Gallery — QUWWA Gym</title>
+  <link rel="stylesheet" href="css/shared.css"/>
+  <link rel="stylesheet" href="css/trainers.css"/>
+</head>
+<body>
+
+  <div id="navbar-placeholder"></div>
+
+  <main>
+
+    <!-- ═══ HERO ═══ -->
+    <section class="trainers-hero">
+      <div class="hero-bg"></div>
+      <div class="hero-overlay"></div>
+      <div class="container hero-content">
+        <span class="hero-eyebrow">Meet The Team</span>
+        <h1>Coached By <span class="accent">The Best</span></h1>
+        <p>Our trainers don't just teach — they transform. Every session, every rep, every breakthrough.</p>
+      </div>
+      <div class="hero-scroll-hint">↓</div>
+    </section>
+
+    <!-- ═══ TRAINERS ═══ -->
+    <section class="trainers-section">
+      <div class="container">
+        <h2 class="section-title">Our <span class="accent">Trainers</span></h2>
+        <div class="divider"></div>
+        <p class="section-subtitle">Filter by specialization to find your perfect match</p>
+
+        <!-- Filter buttons -->
+        <div class="filter-bar">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="Cardio">Cardio</button>
+          <button class="filter-btn" data-filter="Strength">Strength</button>
+          <button class="filter-btn" data-filter="Yoga">Yoga</button>
+          <button class="filter-btn" data-filter="Boxing">Boxing</button>
+        </div>
+
+        <!-- Trainer cards -->
+        <div class="trainers-grid" id="trainersGrid"></div>
+      </div>
+    </section>
+
+    <!-- ═══ GALLERY ═══ -->
+    <section class="gallery-section">
+      <div class="container">
+        <h2 class="section-title">Inside <span class="accent">QUWWA</span></h2>
+        <div class="divider"></div>
+        <p class="section-subtitle">World-class facilities built for champions</p>
+      </div>
+
+      <div class="gallery-grid" id="galleryGrid"></div>
+
+      <!-- Lightbox -->
+      <div class="lightbox" id="lightbox">
+        <button class="lightbox-close" id="lightboxClose">&times;</button>
+        <button class="lightbox-prev" id="lightboxPrev">&#8249;</button>
+        <button class="lightbox-next" id="lightboxNext">&#8250;</button>
+        <div class="lightbox-inner">
+          <img id="lightboxImg" src="" alt=""/>
+          <p class="lightbox-caption" id="lightboxCaption"></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ ROOFTOP FEATURE ═══ -->
+    <section class="rooftop-section">
+      <div class="rooftop-img"></div>
+      <div class="rooftop-overlay"></div>
+      <div class="container rooftop-content">
+        <span class="hero-eyebrow">Exclusive</span>
+        <h2>Train Above <span class="accent">The City</span></h2>
+        <p>Our rooftop training deck offers a one-of-a-kind workout experience with the Dubai skyline as your backdrop. Available for Elite members and private sessions.</p>
+        <a href="classes.html#booking" class="btn btn-primary mt-3">Get Elite Access</a>
+      </div>
+    </section>
+
+    <!-- ═══ MAP ═══ -->
+    <section class="map-section section-alt">
+      <div class="container">
+        <h2 class="section-title">Find <span class="accent">Us</span></h2>
+        <div class="divider"></div>
+        <p class="section-subtitle">Two premium locations across Dubai</p>
+
+        <div class="branches-map">
+          <div class="branch-tabs">
+            <button class="branch-tab active" data-branch="marina">Dubai Marina</button>
+            <button class="branch-tab" data-branch="jlt">JLT</button>
+          </div>
+
+          <div class="map-container">
+            <iframe id="mapFrame"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3613.5!2d55.1397!3d25.0805!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f6b5a1!2sDubai+Marina!5e0!3m2!1sen!2sae!4v1"
+              allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+
+          <div class="branch-info" id="branchInfo">
+            <div class="branch-detail">
+              <h4>Dubai Marina Branch</h4>
+              <p>Marina Walk, Dubai Marina, Dubai, UAE</p>
+              <p>⏰ 6:00 AM – 11:00 PM daily</p>
+              <p>📞 +971 4 123 4567</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Trainer Modal -->
+  <div class="trainer-modal" id="trainerModal">
+    <div class="modal-backdrop" id="modalBackdrop"></div>
+    <div class="modal-card" id="modalCard">
+      <button class="modal-close" id="modalClose">&times;</button>
+      <div class="modal-img-wrap">
+        <img id="modalImg" src="" alt=""/>
+        <span class="modal-badge" id="modalBadge"></span>
+      </div>
+      <div class="modal-body">
+        <h3 id="modalName"></h3>
+        <p class="modal-bio" id="modalBio"></p>
+        <div class="modal-certs" id="modalCerts"></div>
+      </div>
+    </div>
+  </div>
+
+  <div id="footer-placeholder"></div>
+
+  <script src="js/shared.js"></script>
+  <script src="js/trainers.js"></script>
+</body>
+</html>
