@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Trainer Profile — QUWWA Gym</title>
+  <link rel="stylesheet" href="css/shared.css"/>
+  <link rel="stylesheet" href="css/trainer-profile.css"/>
+</head>
+<body>
+
+  <div id="navbar-placeholder"></div>
+
+  <main>
+
+    <!-- ═══ HERO ═══ -->
+    <section class="profile-hero">
+      <div class="profile-hero-img" id="heroImg"></div>
+      <div class="profile-hero-overlay"></div>
+      <div class="container profile-hero-content">
+        <a href="trainers.html" class="back-btn">← Back to Trainers</a>
+        <div class="profile-hero-info">
+          <span class="hero-eyebrow" id="heroSpec"></span>
+          <h1 id="heroName"></h1>
+          <p class="profile-tagline" id="heroTagline"></p>
+          <div class="profile-stats" id="heroStats"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ MAIN CONTENT ═══ -->
+    <section class="profile-body">
+      <div class="container profile-grid">
+
+        <!-- Left: Bio + Classes + Schedule -->
+        <div class="profile-main">
+          <div class="profile-card">
+            <h3>About</h3>
+            <div class="divider" style="margin:0 0 1.2rem"></div>
+            <p id="profileBio"></p>
+          </div>
+
+          <div class="profile-card mt-4">
+            <h3>Classes I Teach</h3>
+            <div class="divider" style="margin:0 0 1.2rem"></div>
+            <div class="classes-list" id="profileClasses"></div>
+          </div>
+
+          <div class="profile-card mt-4">
+            <h3>Weekly Availability</h3>
+            <div class="divider" style="margin:0 0 1.2rem"></div>
+            <div class="availability-grid" id="profileAvailability"></div>
+          </div>
+
+          <!-- Client quote -->
+          <div class="client-quote mt-4" id="profileQuote"></div>
+        </div>
+
+        <!-- Right: Photo + Certs + Book -->
+        <div class="profile-side">
+          <div class="profile-photo-wrap">
+            <img id="profilePhoto" src="" alt=""/>
+            <div class="profile-spec-badge" id="profileBadge"></div>
+          </div>
+
+          <div class="profile-card mt-4">
+            <h3>Certifications</h3>
+            <div class="divider" style="margin:0 0 1.2rem"></div>
+            <ul class="cert-list" id="profileCerts"></ul>
+          </div>
+
+          <a href="classes.html" class="btn btn-primary mt-4" style="width:100%;text-align:center;display:block">
+            Book a Session
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ═══ TRAINING GALLERY ═══ -->
+    <section class="profile-gallery-section section-alt">
+      <div class="container">
+        <h2 class="section-title">Training <span class="accent">Style</span></h2>
+        <div class="divider"></div>
+        <div class="profile-gallery" id="profileGallery"></div>
+      </div>
+    </section>
+
+    <!-- ═══ OTHER TRAINERS ═══ -->
+    <section class="other-trainers">
+      <div class="container">
+        <h2 class="section-title">Meet Other <span class="accent">Trainers</span></h2>
+        <div class="divider"></div>
+        <div class="other-trainers-grid" id="otherTrainers"></div>
+      </div>
+    </section>
+
+  </main>
+
+  <div id="footer-placeholder"></div>
+
+  <script src="js/shared.js"></script>
+  <script src="js/trainer-profile.js"></script>
+</body>
+</html>
