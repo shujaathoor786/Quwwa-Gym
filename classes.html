@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<!-- This line tells the browser to use modern HTML. -->
+<html lang="en">
+<!-- The head contains settings and file links. -->
+<head>
+  <!-- This makes normal characters display correctly. -->
+  <meta charset="UTF-8">
+  <!-- This makes the page responsive on phones and laptops. -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- This is the browser tab title. -->
+  <title>Lesson 2 Classes — QUWWA Gym</title>
+  <!-- This loads the shared QUWWA website styles. -->
+  <link rel="stylesheet" href="../css/shared.css">
+  <!-- This loads the Lesson 2 Classes page styles. -->
+  <link rel="stylesheet" href="css/classes.css">
+  <!-- This loads the shared QUWWA navbar and footer script. -->
+  <script src="../js/shared.js" defer></script>
+  <!-- This loads the Lesson 2 Classes page script. -->
+  <script src="js/classes.js" defer></script>
+</head>
+<!-- The body contains everything visible on the page. -->
+<body>
+  <!-- The shared QUWWA navbar will be inserted here. -->
+  <div id="navbar-placeholder"></div>
+
+  <!-- The main tag contains the real page content. -->
+  <main>
+    <!-- This section is the top hero area. -->
+    <section class="classes-hero">
+      <!-- This container keeps the hero text aligned with the website. -->
+      <div class="container classes-hero-content">
+        <!-- This is the main page heading. -->
+        <h1>Classes <span class="accent">+ Schedule</span></h1>
+        <!-- This paragraph explains the Lesson 2 focus. -->
+        <p>Lesson 2 keeps the QUWWA style and loads class cards from a JSON file.</p>
+      </div>
+    </section>
+
+    <!-- This section is the filter area. -->
+    <section class="classes-filter-section section-alt">
+      <!-- This container keeps the content inside the normal website width. -->
+      <div class="container">
+        <!-- This heading names the section. -->
+        <h2 class="section-title">Filter <span class="accent">Classes</span></h2>
+        <!-- This decorative line matches the rest of the website. -->
+        <div class="divider"></div>
+        <!-- This text explains what is intentionally unfinished. -->
+        <p class="section-subtitle">The dropdown options come from JSON. The actual filtering comes in Lesson 3.</p>
+        <!-- This row keeps the filter controls together. -->
+        <div class="classes-filter-row">
+          <!-- This label explains the dropdown. -->
+          <label for="typeFilter">Class type</label>
+          <!-- JavaScript will add class type options inside this select. -->
+          <select id="typeFilter">
+            <!-- This default option is always visible. -->
+            <option value="All">All types</option>
+          </select>
+          <!-- This button is still visual only in Lesson 2. -->
+          <button type="button" class="btn btn-outline">Clear</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- This section displays the class cards. -->
+    <section class="classes-list-section">
+      <!-- This container keeps the content aligned. -->
+      <div class="container">
+        <!-- This heading names the section. -->
+        <h2 class="section-title">Gym <span class="accent">Classes</span></h2>
+        <!-- This decorative line matches the other pages. -->
+        <div class="divider"></div>
+        <!-- JavaScript will update this text after loading JSON. -->
+        <p id="classCount" class="section-subtitle">Loading classes from JSON...</p>
+        <!-- JavaScript will place class cards inside this empty grid. -->
+        <div id="classesGrid" class="classes-grid"></div>
+      </div>
+    </section>
+
+    <!-- This section shows a static example schedule. -->
+    <section class="schedule-section section-alt">
+      <!-- This container keeps the content aligned. -->
+      <div class="container">
+        <!-- This heading names the schedule section. -->
+        <h2 class="section-title">Weekly <span class="accent">Schedule</span></h2>
+        <!-- This decorative line matches the other pages. -->
+        <div class="divider"></div>
+        <!-- This note explains that the schedule is still static. -->
+        <p class="section-subtitle">The timetable is still static in Lesson 2. We will generate it from data later.</p>
+        <!-- This wrapper allows horizontal scrolling on small screens. -->
+        <div class="schedule-table-wrap">
+          <!-- This table shows simple example schedule rows. -->
+          <table class="schedule-table">
+            <!-- This table head contains column names. -->
+            <thead>
+              <!-- This row contains the headings. -->
+              <tr>
+                <!-- This heading is for the day. -->
+                <th>Day</th>
+                <!-- This heading is for the time. -->
+                <th>Time</th>
+                <!-- This heading is for the class. -->
+                <th>Class</th>
+                <!-- This heading is for the type. -->
+                <th>Type</th>
+                <!-- This heading is for the room. -->
+                <th>Room</th>
+              </tr>
+            </thead>
+            <!-- This table body contains example rows. -->
+            <tbody>
+              <!-- This is one example schedule row. -->
+              <tr>
+                <!-- This cell shows the day. -->
+                <td>Monday</td>
+                <!-- This cell shows the time. -->
+                <td>07:00</td>
+                <!-- This cell shows the class name. -->
+                <td>Morning Flow Yoga</td>
+                <!-- This cell shows the class type. -->
+                <td>Yoga</td>
+                <!-- This cell shows the room. -->
+                <td>Studio A</td>
+              </tr>
+              <!-- This is one example schedule row. -->
+              <tr>
+                <!-- This cell shows the day. -->
+                <td>Tuesday</td>
+                <!-- This cell shows the time. -->
+                <td>19:00</td>
+                <!-- This cell shows the class name. -->
+                <td>HIIT Blast</td>
+                <!-- This cell shows the class type. -->
+                <td>Cardio</td>
+                <!-- This cell shows the room. -->
+                <td>Studio B</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- This section contains the booking form. -->
+    <section class="booking-section" id="booking">
+      <!-- This container keeps the content aligned. -->
+      <div class="container">
+        <!-- This heading names the form section. -->
+        <h2 class="section-title">Booking / Interest <span class="accent">Form</span></h2>
+        <!-- This decorative line matches the other pages. -->
+        <div class="divider"></div>
+        <!-- This form is still simple in Lesson 2. -->
+        <form id="bookingForm" class="booking-form">
+          <!-- This group contains the name field. -->
+          <div class="form-group">
+            <!-- This label names the input. -->
+            <label for="studentName">Full name</label>
+            <!-- This input lets the user type their name. -->
+            <input id="studentName" type="text">
+          </div>
+
+          <!-- This group contains the email field. -->
+          <div class="form-group">
+            <!-- This label names the input. -->
+            <label for="studentEmail">Email address</label>
+            <!-- This input lets the user type their email. -->
+            <input id="studentEmail" type="email">
+          </div>
+
+          <!-- This group contains the class dropdown. -->
+          <div class="form-group">
+            <!-- This label names the dropdown. -->
+            <label for="classChoice">Class interested in</label>
+            <!-- JavaScript will add class options inside this dropdown. -->
+            <select id="classChoice">
+              <!-- This default option appears before JavaScript adds classes. -->
+              <option value="">Choose a class</option>
+            </select>
+          </div>
+
+          <!-- This group contains the message field. -->
+          <div class="form-group form-full">
+            <!-- This label names the message box. -->
+            <label for="studentMessage">Message</label>
+            <!-- This textarea lets the user write a message. -->
+            <textarea id="studentMessage" rows="4"></textarea>
+          </div>
+
+          <!-- This button submits the form. -->
+          <button type="submit" class="btn btn-primary">Send Interest</button>
+          <!-- This paragraph shows the simple JavaScript message. -->
+          <p id="formMessage" class="form-message"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- The shared QUWWA footer will be inserted here. -->
+  <div id="footer-placeholder"></div>
+</body>
+</html>
+

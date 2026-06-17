@@ -1,0 +1,43 @@
+[
+  {
+    "id": "hiit-blast",
+    "name": "HIIT Blast",
+    "type": "Cardio",
+    "duration": 45,
+    "trainer": "Sara Ahmed",
+    "level": "Intermediate",
+    "description": "High-intensity interval training to torch calories and boost endurance.",
+    "image": "../images/cardio.jpg"
+  },
+  {
+    "id": "power-lift",
+    "name": "Power Lift",
+    "type": "Strength",
+    "duration": 60,
+    "trainer": "Mike Torres",
+    "level": "Advanced",
+    "description": "Olympic lifting and compound movements for serious strength gains.",
+    "image": "../images/gym-main.jpg"
+  },
+  {
+    "id": "morning-flow-yoga",
+    "name": "Morning Flow Yoga",
+    "type": "Yoga",
+    "duration": 50,
+    "trainer": "Layla Hassan",
+    "level": "Beginner",
+    "description": "A gentle morning yoga flow to improve flexibility and mental clarity.",
+    "image": "../images/yoga-studio.jpg"
+  },
+  {
+    "id": "boxing-fundamentals",
+    "name": "Boxing Fundamentals",
+    "type": "Boxing",
+    "duration": 55,
+    "trainer": "Omar Khalid",
+    "level": "Beginner",
+    "description": "Learn stance, footwork, and basic combinations in a fun group setting.",
+    "image": "../images/boxing-ring.jpg"
+  }
+]
+

@@ -1,0 +1,151 @@
+/* ============================================================
+   QUWWA GYM — Lesson 2 Classes Page
+   This file keeps the QUWWA style and adds page-specific layout.
+   ============================================================ */
+
+/* This styles the top hero section. */
+.classes-hero {
+  min-height: 420px; /* This gives the hero section a strong visual area. */
+  display: flex; /* This lets us align content vertically. */
+  align-items: center; /* This centers the content vertically. */
+  color: var(--white); /* This makes hero text white. */
+  background-image: linear-gradient(rgba(17, 17, 17, 0.78), rgba(17, 17, 17, 0.48)), url("../../images/group-class.jpg"); /* This adds an overlay and existing QUWWA image. */
+  background-size: cover; /* This makes the image cover the hero area. */
+  background-position: center; /* This keeps the image centered. */
+}
+
+/* This limits the width of hero text. */
+.classes-hero-content {
+  max-width: 760px; /* This keeps the hero text readable. */
+}
+
+/* This styles the hero paragraph. */
+.classes-hero p {
+  max-width: 580px; /* This stops the paragraph from becoming too wide. */
+  margin-top: 1rem; /* This adds space below the heading. */
+  color: rgba(255, 255, 255, 0.88); /* This makes the paragraph readable on the image. */
+  font-size: 1.1rem; /* This makes the paragraph slightly larger. */
+}
+
+/* This styles the filter controls row. */
+.classes-filter-row {
+  display: flex; /* This places controls beside each other. */
+  flex-wrap: wrap; /* This lets controls wrap on small screens. */
+  gap: 1rem; /* This adds space between controls. */
+  align-items: center; /* This aligns controls vertically. */
+  justify-content: center; /* This centers the filter controls. */
+}
+
+/* This sets the filter dropdown width. */
+.classes-filter-row select {
+  width: 260px; /* This keeps the dropdown at a useful size. */
+}
+
+/* This creates the class card grid. */
+.classes-grid {
+  display: grid; /* This enables grid layout. */
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); /* This creates responsive columns. */
+  gap: 1.5rem; /* This adds space between cards. */
+}
+
+/* This styles the image area inside a class card. */
+.class-image {
+  min-height: 190px; /* This gives each image area height. */
+  background-size: cover; /* This makes the image fill the area. */
+  background-position: center; /* This keeps each image centered. */
+}
+
+/* This styles the badge inside a class card. */
+.class-card .badge {
+  margin-bottom: 0.9rem; /* This adds space below the badge. */
+}
+
+/* This styles class card headings. */
+.class-card h3 {
+  margin-bottom: 0.8rem; /* This separates the class name from details. */
+}
+
+/* This styles class card paragraphs. */
+.class-card p {
+  margin-bottom: 0.45rem; /* This creates even spacing between details. */
+}
+
+/* This lets the table scroll on small screens. */
+.schedule-table-wrap {
+  overflow-x: auto; /* This prevents the table from breaking the layout. */
+  background: var(--white); /* This keeps the table background white. */
+  border-radius: var(--radius); /* This rounds the table container. */
+  box-shadow: var(--shadow); /* This matches the site card style. */
+}
+
+/* This styles the schedule table. */
+.schedule-table {
+  width: 100%; /* This makes the table fill its wrapper. */
+  min-width: 680px; /* This keeps columns readable. */
+  border-collapse: collapse; /* This removes spaces between cells. */
+}
+
+/* This styles table headings and cells. */
+.schedule-table th,
+.schedule-table td {
+  padding: 1rem; /* This adds inside spacing. */
+  text-align: left; /* This aligns table text to the left. */
+  border-bottom: 1px solid #eeeeee; /* This adds row separators. */
+}
+
+/* This styles table heading cells. */
+.schedule-table th {
+  color: var(--white); /* This makes heading text white. */
+  background: var(--black); /* This gives headings a dark background. */
+  font-weight: 700; /* This makes headings bold. */
+}
+
+/* This styles the booking form container. */
+.booking-form {
+  max-width: 820px; /* This keeps the form readable. */
+  margin: 0 auto; /* This centers the form. */
+  display: grid; /* This enables grid layout. */
+  grid-template-columns: repeat(2, minmax(0, 1fr)); /* This creates two form columns. */
+  gap: 1.2rem; /* This adds space between form fields. */
+  padding: 2rem; /* This adds inside spacing. */
+  background: var(--white); /* This makes the form white. */
+  border-radius: var(--radius); /* This rounds the form corners. */
+  box-shadow: var(--shadow); /* This adds a soft shadow. */
+}
+
+/* This lets one form field use the full row. */
+.form-full {
+  grid-column: 1 / -1; /* This spans both form columns. */
+}
+
+/* This keeps the form button from stretching. */
+.booking-form .btn {
+  width: fit-content; /* This gives the button a natural width. */
+}
+
+/* This styles the JavaScript message. */
+.form-message {
+  align-self: center; /* This aligns the message with the button. */
+  color: var(--red); /* This uses the QUWWA red color. */
+  font-weight: 700; /* This makes the message easy to see. */
+}
+
+/* These rules apply on smaller screens. */
+@media (max-width: 700px) {
+  /* This makes the hero shorter on phones. */
+  .classes-hero {
+    min-height: 340px; /* This keeps the hero compact on mobile. */
+  }
+
+  /* This makes the filter dropdown full width on phones. */
+  .classes-filter-row select {
+    width: 100%; /* This lets the dropdown fit the screen. */
+  }
+
+  /* This changes the booking form to one column on phones. */
+  .booking-form {
+    grid-template-columns: 1fr; /* This stacks fields vertically. */
+    padding: 1.4rem; /* This reduces inside spacing on phones. */
+  }
+}
+
