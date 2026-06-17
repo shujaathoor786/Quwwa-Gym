@@ -10,7 +10,7 @@
 
 ---
 
-## File Structure
+## File Structur
 ```
 gym-website/
 │
