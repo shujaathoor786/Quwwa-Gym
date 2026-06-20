@@ -126,8 +126,16 @@
 /* This styles the JavaScript message. */
 .form-message {
   align-self: center; /* This aligns the message with the button. */
-  color: var(--red); /* This uses the QUWWA red color. */
+  color: #208a4b; /* This uses a simple success green. */
   font-weight: 700; /* This makes the message easy to see. */
+}
+
+/* This styles form validation messages. */
+.error-message {
+  min-height: 18px; /* This reserves space so the form does not jump too much. */
+  margin-top: 0.25rem; /* This adds a small gap above the error. */
+  color: var(--red); /* This uses the QUWWA red color for errors. */
+  font-size: 0.85rem; /* This keeps error text smaller than labels. */
 }
 
 /* These rules apply on smaller screens. */
@@ -148,4 +156,3 @@
     padding: 1.4rem; /* This reduces inside spacing on phones. */
   }
 }
-

@@ -31,8 +31,8 @@
       <div class="container classes-hero-content">
         <!-- This is the main page heading. -->
         <h1>Classes <span class="accent">+ Schedule</span></h1>
-        <!-- This paragraph explains the Lesson 2 focus. -->
-        <p>Lesson 2 keeps the QUWWA style and loads class cards from a JSON file.</p>
+        <!-- This paragraph explains what the page does. -->
+        <p>Find a class, filter by type, check the weekly timetable, and send your interest form.</p>
       </div>
     </section>
 
@@ -44,8 +44,8 @@
         <h2 class="section-title">Filter <span class="accent">Classes</span></h2>
         <!-- This decorative line matches the rest of the website. -->
         <div class="divider"></div>
-        <!-- This text explains what is intentionally unfinished. -->
-        <p class="section-subtitle">The dropdown options come from JSON. The actual filtering comes in Lesson 3.</p>
+        <!-- This text explains the filter feature. -->
+        <p class="section-subtitle">Choose a class type to update the class cards and schedule.</p>
         <!-- This row keeps the filter controls together. -->
         <div class="classes-filter-row">
           <!-- This label explains the dropdown. -->
@@ -55,8 +55,8 @@
             <!-- This default option is always visible. -->
             <option value="All">All types</option>
           </select>
-          <!-- This button is still visual only in Lesson 2. -->
-          <button type="button" class="btn btn-outline">Clear</button>
+          <!-- This button clears the selected filter. -->
+          <button type="button" class="btn btn-outline" id="clearFilter">Clear</button>
         </div>
       </div>
     </section>
@@ -76,7 +76,7 @@
       </div>
     </section>
 
-    <!-- This section shows a static example schedule. -->
+    <!-- This section shows the weekly schedule. -->
     <section class="schedule-section section-alt">
       <!-- This container keeps the content aligned. -->
       <div class="container">
@@ -84,8 +84,8 @@
         <h2 class="section-title">Weekly <span class="accent">Schedule</span></h2>
         <!-- This decorative line matches the other pages. -->
         <div class="divider"></div>
-        <!-- This note explains that the schedule is still static. -->
-        <p class="section-subtitle">The timetable is still static in Lesson 2. We will generate it from data later.</p>
+        <!-- JavaScript updates this note when the filter changes. -->
+        <p id="scheduleNote" class="section-subtitle">Loading schedule from JSON...</p>
         <!-- This wrapper allows horizontal scrolling on small screens. -->
         <div class="schedule-table-wrap">
           <!-- This table shows simple example schedule rows. -->
@@ -106,35 +106,8 @@
                 <th>Room</th>
               </tr>
             </thead>
-            <!-- This table body contains example rows. -->
-            <tbody>
-              <!-- This is one example schedule row. -->
-              <tr>
-                <!-- This cell shows the day. -->
-                <td>Monday</td>
-                <!-- This cell shows the time. -->
-                <td>07:00</td>
-                <!-- This cell shows the class name. -->
-                <td>Morning Flow Yoga</td>
-                <!-- This cell shows the class type. -->
-                <td>Yoga</td>
-                <!-- This cell shows the room. -->
-                <td>Studio A</td>
-              </tr>
-              <!-- This is one example schedule row. -->
-              <tr>
-                <!-- This cell shows the day. -->
-                <td>Tuesday</td>
-                <!-- This cell shows the time. -->
-                <td>19:00</td>
-                <!-- This cell shows the class name. -->
-                <td>HIIT Blast</td>
-                <!-- This cell shows the class type. -->
-                <td>Cardio</td>
-                <!-- This cell shows the room. -->
-                <td>Studio B</td>
-              </tr>
-            </tbody>
+            <!-- JavaScript will add schedule rows inside this table body. -->
+            <tbody id="scheduleBody"></tbody>
           </table>
         </div>
       </div>
@@ -148,14 +121,16 @@
         <h2 class="section-title">Booking / Interest <span class="accent">Form</span></h2>
         <!-- This decorative line matches the other pages. -->
         <div class="divider"></div>
-        <!-- This form is still simple in Lesson 2. -->
-        <form id="bookingForm" class="booking-form">
+        <!-- This form is validated with simple JavaScript. -->
+        <form id="bookingForm" class="booking-form" novalidate>
           <!-- This group contains the name field. -->
           <div class="form-group">
             <!-- This label names the input. -->
             <label for="studentName">Full name</label>
             <!-- This input lets the user type their name. -->
             <input id="studentName" type="text">
+            <!-- This paragraph shows a name validation message. -->
+            <p class="error-message" id="nameError"></p>
           </div>
 
           <!-- This group contains the email field. -->
@@ -164,6 +139,18 @@
             <label for="studentEmail">Email address</label>
             <!-- This input lets the user type their email. -->
             <input id="studentEmail" type="email">
+            <!-- This paragraph shows an email validation message. -->
+            <p class="error-message" id="emailError"></p>
+          </div>
+
+          <!-- This group contains the phone field. -->
+          <div class="form-group">
+            <!-- This label names the input. -->
+            <label for="studentPhone">Phone number</label>
+            <!-- This input lets the user type their phone number. -->
+            <input id="studentPhone" type="tel">
+            <!-- This paragraph shows a phone validation message. -->
+            <p class="error-message" id="phoneError"></p>
           </div>
 
           <!-- This group contains the class dropdown. -->
@@ -175,6 +162,35 @@
               <!-- This default option appears before JavaScript adds classes. -->
               <option value="">Choose a class</option>
             </select>
+            <!-- This paragraph shows a class validation message. -->
+            <p class="error-message" id="classError"></p>
+          </div>
+
+          <!-- This group contains the preferred day dropdown. -->
+          <div class="form-group">
+            <!-- This label names the day dropdown. -->
+            <label for="dayChoice">Preferred day</label>
+            <!-- This dropdown lets the user choose a day. -->
+            <select id="dayChoice">
+              <!-- This default option asks the user to choose a day. -->
+              <option value="">Choose a day</option>
+              <!-- This option is Monday. -->
+              <option value="Monday">Monday</option>
+              <!-- This option is Tuesday. -->
+              <option value="Tuesday">Tuesday</option>
+              <!-- This option is Wednesday. -->
+              <option value="Wednesday">Wednesday</option>
+              <!-- This option is Thursday. -->
+              <option value="Thursday">Thursday</option>
+              <!-- This option is Friday. -->
+              <option value="Friday">Friday</option>
+              <!-- This option is Saturday. -->
+              <option value="Saturday">Saturday</option>
+              <!-- This option is Sunday. -->
+              <option value="Sunday">Sunday</option>
+            </select>
+            <!-- This paragraph shows a day validation message. -->
+            <p class="error-message" id="dayError"></p>
           </div>
 
           <!-- This group contains the message field. -->
@@ -183,6 +199,8 @@
             <label for="studentMessage">Message</label>
             <!-- This textarea lets the user write a message. -->
             <textarea id="studentMessage" rows="4"></textarea>
+            <!-- This paragraph shows a message validation message. -->
+            <p class="error-message" id="messageError"></p>
           </div>
 
           <!-- This button submits the form. -->
@@ -198,4 +216,3 @@
   <div id="footer-placeholder"></div>
 </body>
 </html>
-

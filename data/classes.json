@@ -7,7 +7,19 @@
     "trainer": "Sara Ahmed",
     "level": "Intermediate",
     "description": "High-intensity interval training to torch calories and boost endurance.",
-    "image": "../images/cardio.jpg"
+    "image": "../images/cardio.jpg",
+    "schedule": [
+      {
+        "day": "Monday",
+        "time": "09:00",
+        "room": "Studio B"
+      },
+      {
+        "day": "Tuesday",
+        "time": "19:00",
+        "room": "Studio B"
+      }
+    ]
   },
   {
     "id": "power-lift",
@@ -17,7 +29,19 @@
     "trainer": "Mike Torres",
     "level": "Advanced",
     "description": "Olympic lifting and compound movements for serious strength gains.",
-    "image": "../images/gym-main.jpg"
+    "image": "../images/gym-main.jpg",
+    "schedule": [
+      {
+        "day": "Monday",
+        "time": "18:00",
+        "room": "Strength Zone"
+      },
+      {
+        "day": "Thursday",
+        "time": "10:00",
+        "room": "Strength Zone"
+      }
+    ]
   },
   {
     "id": "morning-flow-yoga",
@@ -27,7 +51,19 @@
     "trainer": "Layla Hassan",
     "level": "Beginner",
     "description": "A gentle morning yoga flow to improve flexibility and mental clarity.",
-    "image": "../images/yoga-studio.jpg"
+    "image": "../images/yoga-studio.jpg",
+    "schedule": [
+      {
+        "day": "Monday",
+        "time": "07:00",
+        "room": "Studio A"
+      },
+      {
+        "day": "Wednesday",
+        "time": "07:00",
+        "room": "Studio A"
+      }
+    ]
   },
   {
     "id": "boxing-fundamentals",
@@ -37,7 +73,18 @@
     "trainer": "Omar Khalid",
     "level": "Beginner",
     "description": "Learn stance, footwork, and basic combinations in a fun group setting.",
-    "image": "../images/boxing-ring.jpg"
+    "image": "../images/boxing-ring.jpg",
+    "schedule": [
+      {
+        "day": "Tuesday",
+        "time": "10:00",
+        "room": "Boxing Ring"
+      },
+      {
+        "day": "Saturday",
+        "time": "11:00",
+        "room": "Boxing Ring"
+      }
+    ]
   }
 ]
-
