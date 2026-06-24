@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact & Reviews — QUWWA Gym</title>
+  <link rel="stylesheet" href="css/shared.css" />
+  <link rel="stylesheet" href="css/contact.css" />
+</head>
+<body>
+
+  <div id="navbar-placeholder"></div>
+
+  <main>
+
+    <!-- ===== HERO ===== -->
+    <section class="contact-hero">
+      <div class="container">
+        <p class="hero-eyebrow">GET IN TOUCH</p>
+        <h1>We're Here<br>For You</h1>
+        <p class="hero-sub">Two locations. One community. Always ready to help you push further.</p>
+        <div class="hero-stats">
+          <div>
+            <div class="hero-stat-number">5,000+</div>
+            <div class="hero-stat-label">ACTIVE MEMBERS</div>
+          </div>
+          <div>
+            <div class="hero-stat-number">2</div>
+            <div class="hero-stat-label">DUBAI LOCATIONS</div>
+          </div>
+          <div>
+            <div class="hero-stat-number">4.9★</div>
+            <div class="hero-stat-label">GOOGLE RATING</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CONTACT INFO ===== -->
+    <section class="branches-section">
+      <div class="container">
+        <h2 class="section-title">Find Us</h2>
+        <div class="divider"></div>
+        <p class="section-subtitle">Drop by either of our Dubai locations — we'd love to see you.</p>
+
+        <div class="branches-grid">
+          <div class="branch-card card">
+            <div class="branch-card-top">
+              <h3>Dubai Marina</h3>
+              <span class="branch-tag">FLAGSHIP</span>
+            </div>
+            <div class="branch-body">
+              <div class="branch-detail">
+                <div class="detail-icon-wrap">📍</div>
+                <span>Marina Walk, Dubai Marina, Dubai, UAE</span>
+              </div>
+              <div class="branch-detail">
+                <div class="detail-icon-wrap">🕐</div>
+                <span>6:00 AM – 11:00 PM daily</span>
+              </div>
+              <div class="branch-detail">
+                <div class="detail-icon-wrap">📞</div>
+                <a href="tel:+97141234567">+971 4 123 4567</a>
+              </div>
+              <div class="branch-detail">
+                <div class="detail-icon-wrap">✉️</div>
+                <a href="mailto:hello@quwwa.ae">hello@quwwa.ae</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="branch-card card">
+            <div class="branch-card-top">
+              <h3>JLT</h3>
+              <span class="branch-tag">BRANCH</span>
+            </div>
+            <div class="branch-body">
+              <div class="branch-detail">
+                <div class="detail-icon-wrap">📍</div>
+                <span>Cluster O, Jumeirah Lake Towers, Dubai, UAE</span>
+              </div>
+              <div class="branch-detail">
+                <div class="detail-icon-wrap">🕐</div>
+                <span>6:00 AM – 10:00 PM daily</span>
+              </div>
+              <div class="branch-detail">
+                <div class="detail-icon-wrap">📞</div>
+                <a href="tel:+97141234567">+971 4 123 4567</a>
+              </div>
+              <div class="branch-detail">
+                <div class="detail-icon-wrap">✉️</div>
+                <a href="mailto:hello@quwwa.ae">hello@quwwa.ae</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== DARK BAND ===== -->
+    <div class="dark-band">
+      <div class="container">
+        <h2>Ready to Start?</h2>
+        <p>Come in for a free 1-day trial — no commitment, no contract. Just bring yourself and a water bottle.</p>
+        <a href="classes.html#booking" class="btn btn-primary">Book a Free Trial</a>
+      </div>
+    </div>
+
+    <!-- ===== TESTIMONIALS ===== -->
+    <section class="testimonials-section">
+      <div class="container">
+        <h2 class="section-title">What Members Say</h2>
+        <div class="divider"></div>
+        <p class="section-subtitle">Real people. Real results. Real community.</p>
+        <div class="testimonials-grid" id="testimonials-grid">
+          <div class="testimonial-skeleton card"></div>
+          <div class="testimonial-skeleton card"></div>
+          <div class="testimonial-skeleton card"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FEEDBACK FORM ===== -->
+    <section class="feedback-section" id="feedback">
+      <div class="container">
+        <h2 class="section-title">Leave a Review</h2>
+        <div class="divider"></div>
+        <p class="section-subtitle">Share your experience and help others find their fit.</p>
+
+        <div class="form-wrapper">
+          <div id="form-success" class="form-success hidden">
+            <div class="success-icon">✓</div>
+            <h3>Thank You!</h3>
+            <p>Your review has been submitted. We appreciate the feedback.</p>
+          </div>
+
+          <form id="feedback-form" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="feedback-name">Full Name <span class="required">*</span></label>
+                <input type="text" id="feedback-name" placeholder="Ahmed Al Rashidi" />
+                <span class="error-msg" id="error-name"></span>
+              </div>
+              <div class="form-group">
+                <label for="feedback-email">Email <span class="required">*</span></label>
+                <input type="email" id="feedback-email" placeholder="you@email.com" />
+                <span class="error-msg" id="error-email"></span>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label>Your Rating <span class="required">*</span></label>
+              <div class="star-rating" id="star-rating">
+                <button type="button" class="star" data-value="1">★</button>
+                <button type="button" class="star" data-value="2">★</button>
+                <button type="button" class="star" data-value="3">★</button>
+                <button type="button" class="star" data-value="4">★</button>
+                <button type="button" class="star" data-value="5">★</button>
+              </div>
+              <input type="hidden" id="feedback-rating" value="" />
+              <span class="error-msg" id="error-rating"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="feedback-message">Your Review <span class="required">*</span></label>
+              <textarea id="feedback-message" rows="5" placeholder="Tell us about your experience at QUWWA..."></textarea>
+              <span class="error-msg" id="error-message"></span>
+            </div>
+
+            <button type="submit" class="btn btn-primary submit-btn" id="submit-btn">
+              Submit Review
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FAQ ===== -->
+    <section class="faq-section">
+      <div class="container">
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <div class="divider"></div>
+        <p class="section-subtitle">Everything you need to know before you start.</p>
+        <div class="faq-list" id="faq-list"></div>
+      </div>
+    </section>
+
+  </main>
+
+  <div id="footer-placeholder"></div>
+
+  <script src="js/shared.js"></script>
+  <script src="js/contact.js"></script>
+</body>
+</html>
